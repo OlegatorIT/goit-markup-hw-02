@@ -4,12 +4,17 @@
 }
 
 body {
-  background: #f5f5f5;
-  font-family: "Roboto";
+  background: #F5F5F5;
+  font-family: "Roboto", sans-serif;
   color: #757575;
+  letter-spacing: 0.03em;
+  font-weight: 400;
 }
 .list {
   list-style: none;
+}
+.button {
+  font-family: inherit;
 }
 
 /* The primary text color:#757575; */
@@ -28,11 +33,10 @@ body {
   background: #ffffff;
 }
 .icon {
-  font-family: "Raleway";
-
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
 }
 .icon-web {
   color: #2196f3;
@@ -41,29 +45,31 @@ body {
   color: #000000;
 }
 
-.nav-list-link {
+/* navigation */
+
+.nav-list a {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list a:hover,
+.nav-list a:focus {
   color: #2196f3;
 }
 
-.nav-contact-link {
+.nav-contact a {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
-.nav-contact-link:hover,
-.nav-contact-link:focus {
+.nav-contact a:hover,
+.nav-contact a:focus {
   color: #2196f3;
 }
 
@@ -76,7 +82,7 @@ body {
 .hero-titel {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -86,79 +92,64 @@ body {
 .hero-button {
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
-padding: 10px 32px 10px 32px;
+  padding: 10px 32px 10px 32px;
   background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
-/* main */
+.hero-button:focus {
+}
 
-.section .title {
+/* section qualities our company  */
+
+.section-qualities .title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
-.section .text {
-  font-weight: 400;
+.section-qualities .text {
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
 }
 
-.title {
+.section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 /* our-team */
 
-.our-team .title {
+.section-our-team .title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  line-height: 1.18;
+  color: var(--secondary-text-color);
 }
 
-.our-team .text {
-  font-weight: 400;
+.section-our-team .text {
   font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
+  line-height: 1.18;
 }
 
 /* footer */
 
 .address {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: #ffffff;
 }
 
 .footer-contact {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -167,4 +158,44 @@ padding: 10px 32px 10px 32px;
 
 .footer {
   background: #2f303a;
+}
+
+
+
+/* page portfolio */
+
+/* filter */
+
+.list-filter{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--secondary-text-color);
+    background: #F5F4FA;
+}
+
+.list-filter li:hover,
+.list-filter li:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+/* <!-- examples of our works --> */
+.examples-list h3{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--secondary-text-color);
+}
+
+.examples-list p{
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--primary-text-color);
+}
+
+.examples-list :hover,
+.examples-list li:focus{
+    background-color: #2196F3;
 }
