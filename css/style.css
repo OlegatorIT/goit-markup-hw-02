@@ -4,12 +4,11 @@
 }
 
 body {
-  background: #F5F5F5;
+  background: #f5f5f5;
   font-family: "Roboto", sans-serif;
   color: #757575;
   letter-spacing: 0.03em;
   font-weight: 400;
-  
 }
 .list {
   list-style: none;
@@ -98,6 +97,7 @@ body {
   color: #ffffff;
   padding: 10px 32px 10px 32px;
   background: #2196f3;
+  cursor: pointer;
 }
 
 .hero-button:focus {
@@ -161,42 +161,41 @@ body {
   background: #2f303a;
 }
 
-
-
 /* page portfolio */
 
 /* filter */
 
-.list-filter{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    color: var(--secondary-text-color);
-    background: #F5F4FA;
+.list-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--secondary-text-color);
+  background: #f5f4fa;
+  cursor: pointer;
 }
 
-.list-filter li:hover,
-.list-filter li:focus {
-    background-color: #2196F3;
-    color: #FFFFFF;
+.list-filter li[type="button"]:hover,
+.list-filter li[type="button"]:focus {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 /* <!-- examples of our works --> */
-.examples-list h3{
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--secondary-text-color);
+.examples-list h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
 }
 
-.examples-list p{
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--primary-text-color);
+.examples-list p {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
 }
 
 .examples-list :hover,
-.examples-list li:focus{
-    background-color: #2196F3;
+.examples-list li:focus {
+  background-color: #2196f3;
 }
