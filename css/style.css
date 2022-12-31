@@ -1,14 +1,25 @@
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
+
+  --primary-background-color: #f5f5f5;
+  --secondary-background-color: #2f303a;
+  --header-background-color: #ffffff;
+  --filrer-button-background-color: #f5f4fa;
+
+  --active-color: #2196f3;
+
+  --white-color-text: #ffffff;
+  --black-color-text: #000000;
 }
 
 body {
-  background: #f5f5f5;
+  background: var(--primary-background-color);
   font-family: "Roboto", sans-serif;
-  color: #757575;
+  color: var(--primary-text-color);
   letter-spacing: 0.03em;
-  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 .list {
   list-style: none;
@@ -17,60 +28,60 @@ body {
   font-family: inherit;
 }
 
-/* The primary text color:#757575; */
-/* The secondary text color: #212121;  */
-/* The footer text contacts color: rgba(255, 255, 255, 0.6); */
-/* the hover and button color: #2196F3; */
-
-/* primary background: #F5F5F5; */
-/* secondary background: #F5F4FA; */
-/* header background: #FFFFFF; */
-/* hero and footer background: #2F303A; */
-
 /* header */
 
 .header {
-  background: #ffffff;
+  background: var(--header-background-color);
 }
 .icon {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
 }
 .icon-web {
-  color: #2196f3;
+  color: var(--active-color);
 }
-.icon-Studio {
-  color: #000000;
+.icon-studio {
+  color: var(--black-color-text);
+}
+.footer .icon-studio {
+  color: var(--white-color-text);
+}
+
+.header .nav-list .active{
+  color: var(--active-color);
 }
 
 /* navigation */
 
-.nav-list a {
+.nav-list .link {
   font-weight: 500;
-  font-size: 14px;
+
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  text-decoration: none;
 }
 
-.nav-list a:hover,
-.nav-list a:focus {
-  color: #2196f3;
+.nav-list .link:focus,
+.nav-list .link:hover {
+  color: var(--active-color);
 }
 
-.nav-contact a {
+.nav-contact .contact {
   font-weight: 500;
-  font-size: 14px;
+
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 .nav-contact a:hover,
 .nav-contact a:focus {
-  color: #2196f3;
+  color: var(--active-color);
 }
 
 /* hero */
@@ -86,7 +97,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color-text);
 }
 
 .hero-button {
@@ -94,7 +105,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color-text);
   padding: 10px 32px 10px 32px;
   background: #2196f3;
   cursor: pointer;
@@ -106,20 +117,15 @@ body {
 /* section qualities our company  */
 
 .section-qualities .title {
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
 
 .section-qualities .text {
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -142,54 +148,54 @@ body {
 
 /* footer */
 
-.address {
-  font-size: 14px;
-  line-height: 1.71;
-  color: #ffffff;
+.footer-address {
+  color: var(--white-color-text);
 }
 
 .footer-contact {
-  font-size: 14px;
-  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
 .footer-contact:focus {
+  color: var(--active-color);
 }
 
 .footer {
-  background: #2f303a;
+  background: var(--secondary-background-color);
 }
 
 /* page portfolio */
 
 /* filter */
 
-.list-filter {
+.list-filter .button-filter {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   color: var(--secondary-text-color);
-  background: #f5f4fa;
+  background: var(--filrer-button-background-color);
   cursor: pointer;
 }
 
-.list-filter li[type="button"]:hover,
-.list-filter li[type="button"]:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+.list-filter .button-filter:hover,
+.list-filter .button-filter:focus {
+  background-color: var(--active-color);
+  color: var(--white-color-text);
 }
 
 /* <!-- examples of our works --> */
-.examples-list h3 {
-  font-weight: 700;
+.examples-list .link{
+  text-decoration: none;
+}
+.examples-list .examples-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
 }
 
-.examples-list p {
+.examples-list .examples-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
@@ -197,5 +203,5 @@ body {
 
 .examples-list :hover,
 .examples-list li:focus {
-  background-color: #2196f3;
+  background-color: var(--active-color);
 }
