@@ -110,6 +110,7 @@ body {
 }
 
 .hero-button:focus {
+  color: none ;
 }
 
 /* section qualities our company  */
